@@ -95,7 +95,7 @@ public class BoardController {
 	@GetMapping("/register")
 	@PreAuthorize("isAuthenticated()")
 	public void register() {
-
+		log.info("..............register");
 	}
 
 	@GetMapping(value = "/getAttachList", produces = MediaType.APPLICATION_JSON_VALUE)
